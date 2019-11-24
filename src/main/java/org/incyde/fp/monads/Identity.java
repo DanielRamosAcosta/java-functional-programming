@@ -1,4 +1,4 @@
-package com.acidtango.javaboilerplate.monads;
+package org.incyde.fp.monads;
 
 import java.util.function.Function;
 

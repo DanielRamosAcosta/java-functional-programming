@@ -1,11 +1,11 @@
 package unit;
 
-import com.acidtango.javaboilerplate.monads.Identity;
+import org.incyde.fp.monads.Identity;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class IdentityShould {
+class IdentityShould {
     @Test
     void be_convertible_to_string() {
         Identity<Integer> identity = new Identity<>(123);

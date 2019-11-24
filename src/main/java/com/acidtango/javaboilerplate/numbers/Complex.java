@@ -1,13 +1,13 @@
-package com.acidtango.javaboilerplate;
+package com.acidtango.javaboilerplate.numbers;
 
 
 import java.util.Objects;
 
-public class ComplexNumber {
+public class Complex {
     private final Integer realPart;
     private final Integer complexPart;
 
-    public ComplexNumber(Integer realPart, Integer complexPart) {
+    public Complex(Integer realPart, Integer complexPart) {
         this.realPart = realPart;
         this.complexPart = complexPart;
     }
@@ -23,9 +23,9 @@ public class ComplexNumber {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ComplexNumber complexNumber = (ComplexNumber) o;
-        return realPart.equals(complexNumber.realPart) &&
-                complexPart.equals(complexNumber.complexPart);
+        Complex complex = (Complex) o;
+        return realPart.equals(complex.realPart) &&
+                complexPart.equals(complex.complexPart);
     }
 
     @Override
@@ -34,11 +34,11 @@ public class ComplexNumber {
     }
 
 
-    public ComplexNumber add(ComplexNumber b) {
-        return new ComplexNumber(realPart + b.realPart, complexPart + b.complexPart);
+    public Complex add(Complex b) {
+        return new Complex(realPart + b.realPart, complexPart + b.complexPart);
     }
 
-    public ComplexNumber subtract(ComplexNumber b) {
-        return new ComplexNumber(realPart - b.realPart, complexPart - b.complexPart);
+    public Complex subtract(Complex b) {
+        return new Complex(realPart - b.realPart, complexPart - b.complexPart);
     }
 }

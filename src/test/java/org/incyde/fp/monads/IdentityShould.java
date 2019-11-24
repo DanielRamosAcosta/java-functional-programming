@@ -1,9 +1,8 @@
-package unit;
+package org.incyde.fp.monads;
 
-import org.incyde.fp.monads.Identity;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class IdentityShould {
     @Test

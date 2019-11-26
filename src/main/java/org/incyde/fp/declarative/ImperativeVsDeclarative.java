@@ -1,4 +1,4 @@
-package declarative;
+package org.incyde.fp.declarative;
 
 import java.util.Arrays;
 import java.util.List;

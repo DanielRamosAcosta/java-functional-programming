@@ -1,4 +1,4 @@
-package pure;
+package org.incyde.fp.pure;
 
 import org.junit.jupiter.api.Test;
 
